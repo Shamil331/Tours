@@ -31,5 +31,6 @@
         </DataGrid>
         <Button Grid.Row="2" x:Name="AddBtn" Content="Добавить" Click="AddBtn_Click" HorizontalAlignment="Left"/>
         <Button Grid.Row="2" x:Name="DeleteBtn" Content="Удалить" Click="DeleteBtn_Click" HorizontalAlignment="Right"/>
+        <Button Grid.Row="2" x:Name="Captcha" Content="Удалить" Click="Captcha_Click"  HorizontalAlignment="Center"/>
     </Grid>
 </Window>

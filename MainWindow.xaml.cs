@@ -70,5 +70,12 @@ namespace WpfApp1
             tours.Show();
             this.Close();
         }
+
+        private void Captcha_Click(object sender, RoutedEventArgs e)
+        {
+            CaptchaTest CP = new CaptchaTest();
+            CP.Show();
+            this.Close();
+        }
     }
 }

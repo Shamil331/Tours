@@ -15,11 +15,17 @@ namespace WpfApp1.Models
     
     public partial class TuriDemoEntities : DbContext
     {
+        private static TuriDemoEntities _context;
         public TuriDemoEntities()
             : base("name=TuriDemoEntities")
         {
         }
-    
+        public static TuriDemoEntities GetContext()
+        {
+            if(_context == null)
+                _context = new TuriDemoEntities();
+            return _context;
+        }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();

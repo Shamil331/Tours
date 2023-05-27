@@ -71,6 +71,9 @@
     <Compile Include="Windows\AddAndEdit.xaml.cs">
       <DependentUpon>AddAndEdit.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\CaptchaTest.xaml.cs">
+      <DependentUpon>CaptchaTest.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\Tours.xaml.cs">
       <DependentUpon>Tours.xaml</DependentUpon>
     </Compile>
@@ -87,6 +90,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Windows\AddAndEdit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\CaptchaTest.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -143,7 +150,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EntityDeploy Include="Models\BaseModel.edmx">
